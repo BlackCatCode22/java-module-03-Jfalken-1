@@ -1,20 +1,12 @@
+package mystudent;
+
 public class Student {
-    private static int numOfStudents = 0;
-
-    public Student() {
-        numOfStudents++;
+    public static void sayHello() {
+        System.out.println("\nHello from student class. I am a static method and I belong to the Student class\n");
     }
 
-    public static int getNumOfStudents() {
-        return numOfStudents;
+    public void sayHi() {
+        System.out.println("\nHi. I must be from an object because I am not static\n");
     }
-
-    String firstName;
-    String lastName;
-    String major;
-    double gpa;
-    int age;
-    boolean onProbation;
-
 
 }
